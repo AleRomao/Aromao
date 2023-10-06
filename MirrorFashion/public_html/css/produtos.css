@@ -89,3 +89,98 @@ label[for=azul]::after {
 .cores label:hover::after {
     border: 6px solid rgba(0,0,0,0.1);
 }
+.cores label::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+}
+@media (min-width: 630px) {
+    .produtos {
+        position: relative;
+        padding-left: 40%;
+        font-size: 1.2em;
+    }
+    .cores {
+        position: static;
+        padding: 0;
+    }
+    .cores legend {
+        position: static;
+    }
+    .cores label img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .cores label:after {
+        position: static;
+        float: left;
+        margin-right: 10px;
+    }
+    .cores label img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 35%;
+        max-height: 100%
+    }
+    fieldset {
+        display: inline-block;
+        vertical-align: top;
+        margin: 1em 0;
+        min-width: 240px;
+        width: 45%;
+    }
+}
+.detalhes {
+    padding: 2em 0;
+}
+.detalhes h2 {
+    font-size: 1.5em;
+    line-height: 2;
+}
+.detalhes p {
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 36em;
+}
+@media (min-width: 500px) {
+    .detalhes {
+        font-size: 1.2em;
+    }
+}
+table {
+    border-spacing: 0.2em;
+    border-collapse: separate;
+}
+thead {
+    background-color: #999;
+}
+thead th {
+    font-weight: bold;
+    padding: 0.3em;
+    text-align: center;
+}
+td {
+    padding: 0.3em;
+}
+tr:nth-child(2n) {
+    background-color: #ccc;
+}
+td:first-child {
+    font-style: italic;
+}
+.produto-back {
+    background-color: #F2F2F2;
+    margin-top: 1em;
+    border-top: 2px solid #CCC;
+}
+.cores label img {
+    border: 2px solid #CCC;
+}
