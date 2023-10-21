@@ -1,0 +1,37 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 21 de out. de 2023, 11:40:35
+    Author     : romao
+*/
+/* Estilos CSS em um arquivo externo ou dentro da tag <style> no <head> */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas com largura igual */
+    gap: 20px; /* Espaçamento entre as imagens */
+    list-style: none; /* Remove marcadores de lista padrão */
+}
+
+.grid li {
+    width: 100%; /* Garante que cada item da grade ocupe 100% da largura da coluna */
+}
+
+.grid figure {
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.grid img {
+    width: 350px; /* Assegura que as imagens não ultrapassem a largura da grade */
+    height: 250px;
+}
+
+/* Estilos específicos para telas menores (opcional) */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 coluna em telas menores */
+    }
+}
+        
+
