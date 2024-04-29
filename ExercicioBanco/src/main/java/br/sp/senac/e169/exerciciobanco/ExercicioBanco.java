@@ -1,7 +1,5 @@
 package br.sp.senac.e169.exerciciobanco;
 
-import java.util.*;
-
 public class ExercicioBanco {
 
     public static void main(String[] args) {
@@ -58,9 +56,12 @@ public class ExercicioBanco {
             }
             oB[i].mostrarExtrato();
         }*/
+        
         Agencia agencia = new Agencia("alexandre", 1212, 1000);
         agencia.gerarConta();
         agencia.calcPorcentagem();
+        agencia.calcSaldo();
+        agencia.mostrar();
 
     }
 }

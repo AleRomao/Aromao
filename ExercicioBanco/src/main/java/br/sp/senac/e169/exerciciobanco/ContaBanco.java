@@ -4,6 +4,7 @@ public class ContaBanco {
     protected String cliente;
     protected int numConta;
     protected double saldo;
+    protected int tipoConta;
     
     public ContaBanco(String cliente, int numConta, double saldo) {
         this.cliente = cliente;
